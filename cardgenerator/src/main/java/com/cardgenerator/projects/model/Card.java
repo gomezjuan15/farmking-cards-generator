@@ -1,21 +1,19 @@
 package com.cardgenerator.projects.model;
 
-public abstract class Card {
+abstract class Card {
 	
-	private String title;
-	private String description;
-	
-	public Card(String title, String description) {
+	private String imageUrl;	
+
+	public Card(String imageUrl) {
 		
-		this.title = title;
-		this.description = description;
+		setImageUrl(imageUrl);
 	}
 	
-	public String getTitle() {
-		return title;
+	private void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 
-	public String getDescription() {
-		return description;
-	}
+	public String getImageUrl() {
+		return imageUrl;
+	}		
 }
